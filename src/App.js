@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 
+import "./App.css";
+
 // 1b4892e0
 
 const API_URL = "http://www.omdbapi.com?apikey=1b4892e0";
@@ -9,7 +11,7 @@ const App = () => {
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
 
-    console.log(data);
+    console.log(data.Search);
   };
   useEffect(() => {
     searchMovies("spiderman");
