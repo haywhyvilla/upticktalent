@@ -1,7 +1,5 @@
 import { useEffect } from "react";
 
-import "./App.css";
-
 // 1b4892e0
 
 const API_URL = "http://www.omdbapi.com?apikey=1b4892e0";
@@ -13,10 +11,11 @@ const App = () => {
 
     console.log(data);
   };
-  useEffect(() => {}, []);
+  useEffect(() => {
+    searchMovies("spiderman");
+  }, []);
 
   return;
-
   <h1>App</h1>;
 };
 
