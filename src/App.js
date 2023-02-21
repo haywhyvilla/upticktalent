@@ -2,6 +2,7 @@ import { useEffect } from "react";
 
 import "./App.css";
 import SearchIcon from "./search.svg";
+import MovieCard from "./MovieCard";
 
 // 1b4892e0
 
@@ -29,7 +30,9 @@ const App = () => {
         />
         <img src={SearchIcon} alt="Search" onClick={() => {}} />
       </div>
-      <div className="container"></div>
+      <div className="container">
+        <MovieCard movie={movie} />
+      </div>
     </div>
   );
 };
