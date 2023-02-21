@@ -27,8 +27,9 @@ const App = () => {
           value="Superman"
           onChange={() => {}}
         />
-        <img src={SearchIcon} alt="Search" />
+        <img src={SearchIcon} alt="Search" onClick={() => {}} />
       </div>
+      <div className="container"></div>
     </div>
   );
 };
