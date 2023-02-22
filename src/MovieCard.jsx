@@ -20,6 +20,13 @@ const MovieCard = ({ movie }) => {
       <div>
         <span>{movie.Type}</span>
         <h3>{movie.Title}</h3>
+        <div className="overview">
+          <h3>Overview</h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+          doloribus sapiente beatae excepturi, unde labore quidem ad aliquam
+          fugit enim necessitatibus, optio pariatur sit architecto inventore!
+          Ipsa commodi veniam accusantium.
+        </div>
       </div>
     </div>
   );
